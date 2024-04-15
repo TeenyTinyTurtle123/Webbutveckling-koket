@@ -13,6 +13,7 @@ body {
 
 .logo img {
     width: 4rem;
+    cursor: pointer;
 }
 
 .nav-options ul li {
@@ -21,8 +22,19 @@ body {
     padding: 0.3rem;
     /* might not need */
     position: relative;
+    cursor: pointer;
+
 }
 
-.smiley i {
+.nav-options ul li:hover {
+    color: rgb(35, 184, 35);
+}
+
+.smiley {
     display: inline-block;
+}
+
+.smiley .material-symbols-outlined:hover {
+    color: rgb(35, 184, 35);
+    cursor: pointer;
 }
