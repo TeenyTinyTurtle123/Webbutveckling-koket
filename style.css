@@ -39,16 +39,15 @@ body {
 }
 
 /* header */
+.header-banner {
+    position: relative;
+}
 
 .header-banner img {
     height: 100%;
     width: 100%;
 }
 
-.header-banner {
-
-    position: relative;
-}
 
 .on-banner {
     position: relative;
@@ -78,6 +77,15 @@ body {
 
 .options {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+}
+
+.options ul {
+    padding: 0;
+    text-align: center;
 }
 
 .options ul li {
@@ -86,9 +94,14 @@ body {
     list-style: none;
     display: inline-block;
     background-color: #e76f6f;
-    text-align: center;
+    margin: 0.2rem;
     padding: 0 1rem;
     border-radius: 1rem;
+    /* max-width: calc(100% -12rem); */
+}
+
+.options ul li.special {
+    background: #5d7ba2;
 }
 
 @media(max-width: 1022px) {
@@ -103,5 +116,4 @@ body {
     .search-on {
         display: none;
     }
-
 }
